@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aulia Triatmono Profile</title>
+    <link rel="stylesheet" href="styleswebrpogquiz1.css">
+    <script src="https://kit.fontawesome.com/d658d23186.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src=" " class="logo">
+                <ul>
+                    <li><a href="WEBPROGquiz1.htm">Home</a> </li>
+                    <li><a href="WEBPROGquiz1Profile.htm">Profile</a> </li>
+                    <li><a href="WEBPROGquiz1Hometown.htm">HomeTown</a> </li>
+                    <li><a href="WEBPROGquiz1LocalFood.htm">Local Food</a> </li>
+                    <li><a href="WEBPROGquiz1TouristPlace.htm">Tourist Places</a> </li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <h1 class="sub-title">Profile</h1>
+                <p> I am a devoted and enthusiastic second-year computer science student with a strong desire to learn about 
+                    the ever-changing world of technology. I have a solid background in programming, data structures, 
+                    and algorithms from education and personal projects. Over the last few months, I have accomplish 
+                    some of the prestigious course from  top universities in the world.   
+                    <a href="https://www.linkedin.com/in/muhammad-aulia-triatmono-4b29a2249/"target=_blank><i class="fa-solid fa-up-right-from-square"></i></a>
+                </p>
+                  <br>
+                  <div class="tab-titles">
+                      <p class ="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                      <p class ="tab-links" onclick="opentab('experience')">Experience</p>
+                      <p class ="tab-links" onclick="opentab('education')">Education</p>
+                  </div>
+                  <div class="tab-contents active-tab" id="skills">
+                      <br>
+                      <ul>
+                         <li><span>UI/UX</span><br>Designing Webb/App interfaces</li>
+                         <li><span>Web Development</span><br>Web app Development</li>
+                         <li><span>Programming</span><br>C, C++, Python, etc</li>
+                      </ul>
+                  </div>
+                  <div class="tab-contents" id="experience">
+                      <br>
+                      <ul>
+                         <li><span>Web Development Course</span><br>Building Web Applications With PHP <a href="https://www.coursera.org/account/accomplishments/certificate/J4LBLUWF2YD3"target=_blank><i class="fa-solid fa-up-right-from-square"></i></a></li>
+                         <li><span>Web Development Course</span><br>HTML, CSS, and Javascript for Web Developers <a href="https://www.coursera.org/account/accomplishments/certificate/LGVJ4UUKAC2Y"target=_blank><i class="fa-solid fa-up-right-from-square"></i></a></li>
+                         <li><span>Network Communication Course</span><br>Fundamentals of Network Communication <a href="https://www.coursera.org/account/accomplishments/certificate/YVHVJWN5LQ4Q"target=_blank><i class="fa-solid fa-up-right-from-square"></i></a></li>
+                      </ul>
+                  </div>
+                  <div class="tab-contents" id="education">
+                      <br>
+                      <ul>
+                         <li><span>Aug 2022 - Nov 2026</span><br>Institut Teknologi Sepuluh Nopember</li>
+                         <li><span>Jul 2019 - Jun 2022</span><br>Senior High School Al Izhar Pondok Labu</li>
+                      </ul>
+                  </div> 
+            </div>
+        </div>
+    </div>
+    <script>
+        //script for profile
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        
+        function opentab(tabname){
+
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+</body>
+</html>
